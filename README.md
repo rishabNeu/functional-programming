@@ -12,7 +12,7 @@ Java 8 Features Snippets
 
  ## :: Consumer Functional Interface
 - It is an inbuilt interface 
-- Used in all contexts where an object is taken as an **input and is to be consumed and some opertaions are to be performed on it without returning any result**.
+- Used in all contexts where an object is taken as an **input and is to be consumed and some operations are to be performed on it without returning any result**.
 
 
  ## :: Predicate Functional Interface
