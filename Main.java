@@ -1,4 +1,5 @@
 import java.util.function.Consumer;
+import java.util.function.Predicate;
 
 import Calculator.Calculator;
 
@@ -18,6 +19,20 @@ class Main{
 
         consumer.accept(10);
 
+
+         //Implementing Predicate Interface method 
+        // lambda Expression
+        Predicate<Integer> predicate = (t) -> {
+            if(t%2==0){
+                return true;
+            }else{
+                return false;
+            }
+        };
+
+        System.out.println(predicate.test(5));
+         
+        
     }
 
     
