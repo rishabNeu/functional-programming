@@ -1,5 +1,6 @@
 import java.util.function.Consumer;
 import java.util.function.Predicate;
+import java.util.function.Supplier;
 
 import Calculator.Calculator;
 
@@ -33,6 +34,12 @@ class Main{
         System.out.println(predicate.test(5));
          
         
+        //Implementing Supplier Interface method 
+        // lambda Expression
+        Supplier<String> supplier = () -> "Hello from supplier";
+        System.out.println(supplier.get());
+        
+
     }
 
     

@@ -27,3 +27,11 @@ Java 8 Features Snippets
 - T get();  `T is the object which is the return type of the function.`
 
 
+```shell 
+forEach method accepts Consumer as argument 
+
+filter method accepts predicate as argment based on the condition it filters the data supplied to it.
+
+If you are doing some filtering using filter method and not getting any result then in order to return some dummy result we can use Supplier interface.
+```
+
