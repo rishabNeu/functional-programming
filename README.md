@@ -36,4 +36,10 @@ If you are doing some filtering using filter method and not getting any result t
 ```
 
 ## :potable_water: _Stream API_
+- It is used to process collection of objects.
+- Is a sequence of objects that supports various methods which can be pipelined to produce the desired result.
+- Why we need streams ?
+    - Functional Programming
+    - code reduce
+    - Bulk operation
 
