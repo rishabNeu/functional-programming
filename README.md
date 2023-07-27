@@ -43,3 +43,45 @@ If you are doing some filtering using filter method and not getting any result t
     - code reduce
     - Bulk operation
 
+## :: Sorting using Stream API & Lambda Expression
+```shell
+       List<Employee> list =  new Database().getEmployees();
+        
+       #Traditional method
+       Collections.sort(list, new MyComparator());
+       System.out.println(list);
+       
+       #Lambda Expression
+       Collections.sort(list ,(o1,o2) -> (int) ((int) o1.getSalary() - o2.getSalary()) );
+       System.out.println(list);
+
+       #Stream sorting
+       list.stream()
+       .sorted((o1,o2) -> (int) ((int) o2.getSalary() - o1.getSalary()))
+       .forEach(emp -> System.out.println(emp.getSalary()));
+```
+
+## :: Map & Flat Maps
+- Both of these are used for **Data transformation**
+- Map are just for  **Data**  `Transformation` while FlatMaps are for `Transformation & Flattering.`
+ 
+| map()| flatMap()| 
+|----|-----| 
+|The function passed to map() operation returns a single value for a single input.	|The function you pass to flatmap() operation returns an arbitrary number of values as the output.|
+|One-to-one mapping occurs in map().|One-to-many mapping occurs in flatMap().|
+|Only perform the mapping.|Perform mapping as well as flattening.|
+|Produce a stream of value.	| Produce a stream of stream value.|
+|map() is used only for transformation.	| flatMap() is used both for transformation and mapping. |
+
+
+```shell
+#Example of Stream of Stream 
+List of list-[[1, 2], [3, 4], [5, 6], [7, 8]]
+
+# The above is converted to Stream using FlatMaps 
+
+
+```
+
+
+
