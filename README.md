@@ -43,7 +43,7 @@ If you are doing some filtering using filter method and not getting any result t
     - code reduce
     - Bulk operation
 
-## :: Sorting using Stream API & Lambda Expression
+## :yarn: Sorting using Stream API & Lambda Expression
 ```shell
        List<Employee> list =  new Database().getEmployees();
         
@@ -61,7 +61,7 @@ If you are doing some filtering using filter method and not getting any result t
        .forEach(emp -> System.out.println(emp.getSalary()));
 ```
 
-## :: Map & Flat Maps
+## :world_map: Map & Flat Maps
 - Both of these are used for **Data transformation**
 - Both are `Intermediate` methods & return another Stream as a part of Output.
 - Map are just for  **Data**  `Transformation` while FlatMaps are for `Transformation & Flattering.`
