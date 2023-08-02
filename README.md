@@ -120,6 +120,8 @@ System.out.println(averageSalary);
 - In parallel streams, one can separate the Java code into more than one stream, which is executed in parallel on their separate cores, and the end result is the combination of the individual results
 - The order of exection is not under our control.
 
+>Note: Just need to use `parallelStream()` function instead of `stream()` & we can see the magic.
+
 ## :spiral_notepad:  [Java 8 Documentation for Reference](https://docs.oracle.com/javase/8/docs/api/ "Java 8 Doc")
 
 ## :artist: _Author_
