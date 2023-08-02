@@ -114,10 +114,15 @@ double averageSalary = employees.stream().
 System.out.println(averageSalary);
 ```
 
+## :point_up: Parallel Streams
+- It is meant for utilizing the various cores of the processor.
+- Any Java code that has only one processing stream, where it is sequentially executed.
+- In parallel streams, one can separate the Java code into more than one stream, which is executed in parallel on their separate cores, and the end result is the combination of the individual results
+- The order of exection is not under our control.
 
 ## :spiral_notepad:  [Java 8 Documentation for Reference](https://docs.oracle.com/javase/8/docs/api/ "Java 8 Doc")
 
-## :ninja: _Author_
+## :artist: _Author_
 
 [Rishab Agarwal](mailto:agarwal.risha@northeastern.edu)
 
